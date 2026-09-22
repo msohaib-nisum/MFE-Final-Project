@@ -1,0 +1,29 @@
+{
+  "name": "mfe-accounts",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mfe-accounts/src",
+  "prefix": "app",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "cd apps/mfe-accounts && npm run dev"
+          }
+        ]
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "cd apps/mfe-accounts && npm run build"
+          }
+        ]
+      }
+    }
+  },
+  "tags": ["type:mfe", "scope:accounts"]
+}

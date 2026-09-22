@@ -1,0 +1,29 @@
+{
+  "name": "mfe-payments",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mfe-payments/src",
+  "prefix": "app",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "cd apps/mfe-payments && npm run dev"
+          }
+        ]
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "cd apps/mfe-payments && npm run build"
+          }
+        ]
+      }
+    }
+  },
+  "tags": ["type:mfe", "scope:payments"]
+}

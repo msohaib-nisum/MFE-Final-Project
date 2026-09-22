@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@banking/shared-types": ["libs/shared-types/src/index.ts"],
+      "@banking/shared-ui": ["libs/shared-ui/src/index.ts"],
+      "@banking/state": ["libs/state/src/index.ts"],
+      "@banking/events": ["libs/events/src/index.ts"],
+      "@banking/gateway": ["apps/gateway/src/index.ts"],
+      "@banking/mfe-accounts": ["apps/mfe-accounts/src/index.ts"],
+      "@banking/mfe-transactions": ["apps/mfe-transactions/src/index.ts"],
+      "@banking/mfe-payments": ["apps/mfe-payments/src/index.ts"],
+      "@banking/api": ["apps/api/src/index.ts"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "dist", "build"]
+}

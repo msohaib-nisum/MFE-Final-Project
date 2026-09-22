@@ -1,0 +1,7 @@
+const nxPreset = require('@nx/jest/preset').default;
+
+module.exports = {
+  ...nxPreset,
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+};
